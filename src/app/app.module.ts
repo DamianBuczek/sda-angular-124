@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StoperComponent } from './components/stoper/stoper.component';
 import { RoundsListComponent } from './components/rounds-list/rounds-list.component';
+import { ResultsListComponent } from './components/results-list/results-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StoperComponent,
-    RoundsListComponent
+    RoundsListComponent,
+    ResultsListComponent
   ],
   imports: [
     BrowserModule,

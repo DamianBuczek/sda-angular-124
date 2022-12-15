@@ -11,12 +11,4 @@
 
 <app-rounds-list [rounds]="rounds"></app-rounds-list>
 
-<div>
-  <h2>Results</h2>
-  <ol>
-    <li *ngFor="let result of results">
-      {{ result.userName }} - {{ result.seconds }}:{{ result.decySeconds }}
-    </li>
-  </ol>
-</div>
-
+<app-results-list [results]="results" ></app-results-list>
