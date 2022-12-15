@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { StoperComponent } from './components/stoper/stoper.component';
 import { RoundsListComponent } from './components/rounds-list/rounds-list.component';
 import { ResultsListComponent } from './components/results-list/results-list.component';
+import { SaveResultComponent } from './components/save-result/save-result.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StoperComponent,
     RoundsListComponent,
-    ResultsListComponent
+    ResultsListComponent,
+    SaveResultComponent
   ],
   imports: [
     BrowserModule,

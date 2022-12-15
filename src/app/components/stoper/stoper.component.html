@@ -4,11 +4,11 @@
 <button *ngIf="!isActive" (click)="resetStoper()">Reset</button>
 <h1>Time: {{ seconds }}:{{ decySeconds }}</h1>
 
-<div *ngIf="!isActive && (seconds > 0 || decySeconds > 0)">
-  <input [(ngModel)]="userName" />
-  <button (click)="saveResult()">Save</button>
-</div>
-
 <app-rounds-list [rounds]="rounds"></app-rounds-list>
 
-<app-results-list [results]="results" ></app-results-list>
+<app-results-list [results]="results"></app-results-list>
+
+<app-save-result
+  *ngIf="!isActive && (seconds > 0 || decySeconds > 0)"
+  (onSaveResult)="saveResult($event)"
+></app-save-result>
