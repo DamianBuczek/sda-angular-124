@@ -4,9 +4,27 @@
 <button *ngIf="!isActive" (click)="resetStoper()">Reset</button>
 <h1>Time: {{ seconds }}:{{ decySeconds }}</h1>
 
-<ol>
-  <li *ngFor="let round of rounds">
-    {{ round.seconds }}:{{ round.decySeconds }}
-  </li>
-</ol>
+<div *ngIf="!isActive && (seconds > 0 || decySeconds > 0)">
+  <input [(ngModel)]="userName" />
+  <button (click)="saveResult()">Save</button>
+</div>
+
+<div>
+  <h2>Rounds</h2>
+  <ol>
+    <li *ngFor="let round of rounds">
+      {{ round.seconds }}:{{ round.decySeconds }}
+    </li>
+  </ol>
+</div>
+
 <!-- LEADERBOARD -->
+
+<div>
+  <h2>Results</h2>
+  <ol>
+    <li *ngFor="let result of results">
+      {{ result.userName }} - {{ result.seconds }}:{{ result.decySeconds }}
+    </li>
+  </ol>
+</div>
