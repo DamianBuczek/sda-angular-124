@@ -8,6 +8,7 @@ import { StoperComponent } from './components/stoper/stoper.component';
 import { RoundsListComponent } from './components/rounds-list/rounds-list.component';
 import { ResultsListComponent } from './components/results-list/results-list.component';
 import { SaveResultComponent } from './components/save-result/save-result.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SaveResultComponent } from './components/save-result/save-result.compon
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
