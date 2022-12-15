@@ -9,14 +9,7 @@
   <button (click)="saveResult()">Save</button>
 </div>
 
-<div>
-  <h2>Rounds</h2>
-  <ol>
-    <li *ngFor="let round of rounds">
-      {{ round.seconds }}:{{ round.decySeconds }}
-    </li>
-  </ol>
-</div>
+<app-rounds-list [rounds]="rounds"></app-rounds-list>
 
 <div>
   <h2>Results</h2>
