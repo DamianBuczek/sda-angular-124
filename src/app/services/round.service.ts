@@ -5,7 +5,7 @@ import { Round } from '../models/app-models';
   providedIn: 'root',
 })
 export class RoundService {
-  private rounds: Round[] = [];
+  private readonly rounds: Round[] = [];
 
   constructor() {}
 
