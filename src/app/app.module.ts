@@ -10,6 +10,9 @@ import { ResultsListComponent } from './components/results-list/results-list.com
 import { SaveResultComponent } from './components/save-result/save-result.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UsersListComponent } from './components/users-list/users-list.component';
+import { AddUserComponent } from './components/add-user/add-user.component';
+import { EditUserComponent } from './components/edit-user/edit-user.component';
+import { UserFormComponent } from './components/user-form/user-form.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { UsersListComponent } from './components/users-list/users-list.component
     RoundsListComponent,
     ResultsListComponent,
     SaveResultComponent,
-    UsersListComponent
+    UsersListComponent,
+    AddUserComponent,
+    EditUserComponent,
+    UserFormComponent
   ],
   imports: [
     BrowserModule,

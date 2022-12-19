@@ -1,3 +1,8 @@
+<app-add-user></app-add-user>
+
 <ol>
-  <li *ngFor="let user of users">{{ user.first_name }} {{ user.last_name }}</li>
+  <li *ngFor="let user of users">
+    {{ user.first_name }} {{ user.last_name }}
+    <a [routerLink]="['/editUser/2']">Edit</a>
+  </li>
 </ol>

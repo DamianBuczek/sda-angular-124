@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { Result, Round } from './models/app-models';
 
 @Component({
@@ -6,6 +6,5 @@ import { Result, Round } from './models/app-models';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class AppComponent {
- 
+export class AppComponent{
 }

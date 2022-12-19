@@ -28,3 +28,8 @@ export interface ReqResponse {
     text: string;
   };
 }
+
+export interface AddUser {
+  name: string;
+  job: string;
+}
